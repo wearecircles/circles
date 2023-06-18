@@ -6,14 +6,17 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily : {
-        'urbanist' : 'Urbanist, sans-serif',
-        'body' : 'Montserrat, sans-serif'
+      fontFamily: {
+        'urbanist': 'Urbanist, sans-serif',
+        'body': 'Montserrat, sans-serif'
       },
       colors: {
         'primary': '#004275',
         'accent2': '#FDAF77',
         'accent1': '#FF7571'
+      },
+      textColor:{
+        'color1': '#004275',
       }
     },
   },
