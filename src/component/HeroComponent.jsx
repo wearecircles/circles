@@ -16,8 +16,8 @@ const HeroComponent = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-[16px]">
-          <ElevatedButton title='Contact' />
-          <TextButtonComponent title='Services' />
+          <ElevatedButton title='Contact' link={'https://www.facebook.com/hhand.srvcs'} />
+          <TextButtonComponent title='Services' link={'#portfolio'} target={'_self'}/>
         </div>
       </div>
       <div className="w-full ">

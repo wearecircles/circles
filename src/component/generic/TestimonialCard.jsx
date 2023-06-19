@@ -1,11 +1,11 @@
 import React from 'react'
 import ChipsComponent from './ChipsComponent'
 
-const TestimonialCard = ({size, style, index}) => {
+const TestimonialCard = ({size, style, index, name, description}) => {
   return (
     <div className={`relative flex flex-col w-full h-full ${index} ${style}`}>
       {/* image placeholder */}
-      <div className="z-10 flex justify-center">
+      <div className="hidden lg:z-10 lg:flex justify-center">
         <img className={`w-[200px] h-[200px] ${size}`} src="images/placeholder-img2.png" alt="" />
       </div>
 
@@ -17,11 +17,11 @@ const TestimonialCard = ({size, style, index}) => {
         {/* customer name + review */}
         <div className="flex flex-col gap-[16px] ">
           <h6 className= 'text-primary font-black uppercase text-center'>
-            Lorem Ipsum
+            {name}
           </h6>
           {/* placeholder Text */}
           <p className='text-primary break-all'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
+            {description}
           </p>
         </div>
         <div className="flex flex-row gap-[16px]">

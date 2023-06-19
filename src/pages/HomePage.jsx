@@ -11,7 +11,7 @@ import FooterComponent from '../component/FooterComponent'
 const HomePage = () => {
   return (
     <>
-      <div className="w-full absolute z-100 ">
+      <div className="w-full absolute z-100 scroll-smooth">
         <NavbarComponent />
       </div>
       <HeroComponent />
