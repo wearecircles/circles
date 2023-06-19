@@ -7,7 +7,7 @@ const ServicesComponent = () => {
 
     <div className="flex flex-col lg:flex-row gap-[48px] py-[150px] px-[24px] lg:px-[100px] md:px-[50px] bg-cover bg-[url('images/services.svg')]  lg:h-[900px] items-center">
       {/* heading + buttons */}
-      <div className="flex flex-col gap-[24px] lg:gap-[48px] w-full">
+      <div className="flex flex-col  gap-[24px] lg:gap-[48px] w-full">
         <div className="flex flex-col gap-[8px]">
           <h5 className="uppercase font-urbanist font-bold text-[16px] lg:text-[20px] lg:leading-[28.8px] tracking-[10px] text-primary">
             what we offer

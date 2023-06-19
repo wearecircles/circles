@@ -15,7 +15,7 @@ export default {
         'accent2': '#FDAF77',
         'accent1': '#FF7571'
       },
-      textColor:{
+      textColor: {
         'color1': '#004275',
       }
     },

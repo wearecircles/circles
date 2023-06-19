@@ -7,7 +7,7 @@ const CardComponent = ({ title, type, description, tags }) => {
     <div className="w-full flex flex-col px-[24px] pt-[24px] pb-[48px] gap-[24px] bg-white rounded-[10px]  drop-shadow-[0px_9px_19px_rgba(0,66,117,0.2)]">
       <div className="w-full">
         {/* image placeholder */}
-        <img src="images/placeholder-img.png" alt="" />
+        <img className='w-full' src="images/placeholder-img.png" alt="" />
 
       </div>
 

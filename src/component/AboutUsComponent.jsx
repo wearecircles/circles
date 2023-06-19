@@ -3,7 +3,7 @@ import OutlinedButtonComponent from './generic/OutlinedButtonComponent'
 
 const AboutUsComponent = () => {
   return (
-    <div className="flex flex-row gap-[48px] py-[150px] px-[100px] bg-cover bg-[url('images/about-us.svg')] items-center h-fit">
+    <div className="flex flex-col lg:flex-row gap-[48px] py-[150px] px-[24px] md:px-[50px] lg:px-[100px] bg-cover bg-[url('images/about-us.svg')] items-center h-fit">
       <div className="w-full">
         <img src="images/about-img.svg" alt="" />
       </div>
@@ -21,7 +21,7 @@ const AboutUsComponent = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
         </div>
-        <div className="w-[auto]">
+        <div className="w-[auto] hidden">
           <OutlinedButtonComponent title='Read More' />
         </div>
 

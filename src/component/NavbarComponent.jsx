@@ -39,7 +39,7 @@ const NavbarComponent = () => {
 
           </div>
           <div>
-            <FilledButtonComponent title='Contact' />
+            <FilledButtonComponent title='Contact' link={'https://www.facebook.com/hhand.srvcs'} />
           </div>
         </div>
       </div>
