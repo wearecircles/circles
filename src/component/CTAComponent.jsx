@@ -1,5 +1,6 @@
 import React from 'react'
 import FilledButtonComponent from './generic/FilledButtonComponent'
+import { LINKS } from '../utils/links'
 
 const CTAComponent = () => {
   return (
@@ -12,7 +13,7 @@ const CTAComponent = () => {
           Follow and contact us on our accounts down below.
         </div>
         <div className="w-[auto]">
-          <FilledButtonComponent title='Start A Project' />
+          <FilledButtonComponent title='Start A Project' url={LINKS.facebook} />
         </div>
 
       </div>

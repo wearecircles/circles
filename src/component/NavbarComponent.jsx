@@ -2,16 +2,19 @@ import React, { useState } from 'react'
 import FilledButtonComponent from './generic/FilledButtonComponent';
 import { LINKS } from '../utils/links';
 import { NAVIGATIONS } from '../utils/constants';
+import Link from './generic/LinkComponent';
 
 const NavbarComponent = () => {
   const [active, setActive] = useState(0);
 
   return (
     <>
-      <div className='flex lg:px-[100px] md:px-[50px] justify-between py-[30.5px] px-[24px] '>
-        <div className='flex justify-center items-center text-[36px] font-extrabold uppercase text-primary hover:text-accent2'>
-          Circles
-        </div>
+      <div id='home' className='flex lg:px-[100px] md:px-[50px] justify-between py-[30.5px] px-[24px] '>
+        <a href="#navbar" target='_self'>
+          <div className='flex justify-center items-center text-[36px] font-extrabold uppercase text-primary hover:text-accent2'>
+            Circles
+          </div>
+        </a>
         <div className='flex gap-[48px]'>
           <div className='hidden lg:flex justify-center items-center'>
             <ul className='flex gap-[24px]'>
@@ -19,13 +22,28 @@ const NavbarComponent = () => {
               {
 
                 NAVIGATIONS.map((item, index) => (
+
+                  // index === active ? <a href={item.path} target='_self'>
+                  //   <li className='text-accent2 cursor-pointer font-bold uppercase hover:text-accent1'>{item.name}
+                  //   </li>
+                  // </a> : <a href={item.path} target='_self'>
+                  //   <li className='text-accent2 cursor-pointer font-bold uppercase hover:text-accent2'>{item.name}
+                  //   </li>
+                  // </a>
+
                   index === active
                     ?
-                    <li key={index} className='text-accent2 cursor-pointer font-bold uppercase hover:text-accent1'>{item}
-                    </li>
+                    <a href={item.path} target='_self'>
+                      <li className='text-accent2 cursor-pointer font-bold uppercase hover:text-accent1'>{item.name}
+                      </li>
+                    </a>
+
                     :
-                    <li key={index} className='text-primary cursor-pointer font-bold uppercase hover:text-accent2'>{item}
-                    </li>
+                    <a href={item.path} target='_self'>
+                      <li key={index} className='text-primary cursor-pointer font-bold uppercase hover:text-accent2'>{item.name}
+                      </li>
+                    </a>
+
                 )
                 )
               }
