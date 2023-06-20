@@ -1,6 +1,5 @@
 import React from 'react'
 import ElevatedButton from './generic/ElevatedButton'
-import ServicesPillComponent from './generic/ServicesPillComponent'
 
 const ServicesComponent = () => {
   return (
