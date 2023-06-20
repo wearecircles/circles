@@ -1,13 +1,13 @@
 import React from 'react'
+import Link from './LinkComponent'
 
-const FilledButtonComponent = ({ title , link }) => {
+const FilledButtonComponent = ({ title, url }) => {
   return (
-
-    <a href={`${link}`} target="_blank" rel="noopener noreferrer">
-      <button href={''} className='bg-primary text-white rounded-[30px] px-[56px] py-[15px] font-black hover:bg-accent2 uppercase  tracking-[0.46px] '>
+    <Link url={url}>
+      <button className='bg-primary text-white  px-[56px] py-[15px] font-black hover:bg-accent2 uppercase  tracking-[0.46px] rounded-[30px]'>
         {title}
       </button>
-    </a>
+    </Link>
 
   )
 }
