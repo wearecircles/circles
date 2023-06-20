@@ -4,7 +4,7 @@ import { LINKS } from '../utils/links'
 
 const CTAComponent = () => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row gap-[48px] py-[150px] px-[24px] lg:px-[100px] bg-cover bg-[url('images/cta-block.svg')] items-center h-fitx">
+    <div className="flex flex-col-reverse lg:flex-row gap-[48px] py-[150px] px-[24px] lg:px-[100px] bg-cover bg-[url('cta-block.svg')] items-center h-fitx">
       <div className="w-full flex flex-col gap-[24px]">
         <div className="font-black text-[64px] leading-[76.8px] text-primary uppercase font-urbanist">
           Have Any <text className='text-accent2'>Projects in mind?</text>
@@ -18,7 +18,7 @@ const CTAComponent = () => {
 
       </div>
       <div className="w-full">
-        <img src="images/cta-img.svg" alt="" />
+        <img src="cta-img.svg" alt="" />
       </div>
     </div>
   )

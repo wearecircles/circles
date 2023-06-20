@@ -5,7 +5,7 @@ import { LINKS } from '../utils/links'
 
 const HeroComponent = () => {
   return (
-    <div className="flex flex-col-reverse py-[150px] px-[24px] md:px-[50px] lg:flex-row gap-[24px] lg:py-[227px] lg:px-[100px] bg-cover bg-[url('images/background.svg')] items-center">
+    <div className="flex flex-col-reverse py-[150px] px-[24px] md:px-[50px] lg:flex-row gap-[24px] lg:py-[227px] lg:px-[100px] bg-cover bg-[url('background.svg')] items-center">
       {/* heading */}
       <div className="flex flex-col gap-[48px]">
         <div className="flex flex-col gap-[24px]">
@@ -22,7 +22,7 @@ const HeroComponent = () => {
         </div>
       </div>
       <div className="w-full ">
-        <img src="images/hero.svg" className='w-full h-[350px] md:h-[450px] lg:h-full' alt="" />
+        <img src="hero.svg" className='w-full h-[350px] md:h-[450px] lg:h-full' alt="" />
       </div>
     </div>
   )
