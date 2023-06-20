@@ -4,7 +4,7 @@ import { HEADING, SERVICES, } from '../utils/services'
 const ServicesComponent = () => {
   return (
 
-    <div id='services' className="flex flex-col lg:flex-row gap-[48px] py-[150px] px-[24px] lg:px-[100px] md:px-[50px] bg-cover bg-[url('images/services.svg')]  lg:h-[900px] items-center">
+    <div id='services' className="flex flex-col lg:flex-row gap-[48px] py-[150px] px-[24px] lg:px-[100px] md:px-[50px] bg-cover bg-[url('services.svg')]  lg:h-[900px] items-center">
       {/* heading + buttons */}
       <div className="flex flex-col  gap-[24px] lg:gap-[48px] w-full">
         <div className="flex flex-col gap-[8px]">
@@ -22,7 +22,7 @@ const ServicesComponent = () => {
       </div>
 
       {/* pills */}
-      <div className="flex flex-col w-full h-full lg:items-center gap-[30px] lg:gap-[22px] lg:bg-[url('images/services-circle.svg')]">
+      <div className="flex flex-col w-full h-full lg:items-center gap-[30px] lg:gap-[22px] lg:bg-[url('services-circle.svg')]">
         <div className="h-full items-center">
           <div className="flex relative flex-row w-full lg:w-[340.19px] h-[180px]">
             {SERVICES.programming.map((item, index) => (

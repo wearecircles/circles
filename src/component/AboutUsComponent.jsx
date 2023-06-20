@@ -4,9 +4,9 @@ import { ABOUT } from '../utils/about_us'
 
 const AboutUsComponent = () => {
   return (
-    <div id='about' className="flex flex-col lg:flex-row gap-[48px] py-[150px] px-[24px] md:px-[50px] lg:px-[100px] bg-cover bg-[url('images/about-us.svg')] items-center h-fit">
+    <div id='about' className="flex flex-col lg:flex-row gap-[48px] py-[150px] px-[24px] md:px-[50px] lg:px-[100px] bg-cover bg-[url('about-us.svg')] items-center h-fit">
       <div className="w-full">
-        <img src="images/about-img.svg" alt="" />
+        <img src="about-img.svg" alt="" />
       </div>
       <div className="w-full flex flex-col gap-[24px]">
         <div className="flex flex-col gap-[8px] font-urbanist">

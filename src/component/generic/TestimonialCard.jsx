@@ -13,7 +13,7 @@ const TestimonialCard = ({ size, style, index, name, description, url, children 
         {/* 
         <div className="flex flex-row gap-[8px] justify-center ">
           // star rating placeholder 
-        <img className={`w-[30px] h-[30px] ${size}`} src="images/star.svg" alt="" />
+        <img className={`w-[30px] h-[30px] ${size}`} src="star.svg" alt="" />
       </div>
         */}
         {/* customer name + review */}
