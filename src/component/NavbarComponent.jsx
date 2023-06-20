@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import FilledButtonComponent from './generic/FilledButtonComponent';
-
-const navigations = ['Home', 'About', 'Services', 'Works'];
+import { LINKS } from '../utils/links';
+import { NAVIGATIONS } from '../utils/constants';
 
 const NavbarComponent = () => {
   const [active, setActive] = useState(0);
+
   return (
     <>
       <div className='flex lg:px-[100px] md:px-[50px] justify-between py-[30.5px] px-[24px] '>
@@ -14,8 +15,10 @@ const NavbarComponent = () => {
         <div className='flex gap-[48px]'>
           <div className='hidden lg:flex justify-center items-center'>
             <ul className='flex gap-[24px]'>
+
               {
-                navigations.map((item, index) => (
+
+                NAVIGATIONS.map((item, index) => (
                   index === active
                     ?
                     <li key={index} className='text-accent2 cursor-pointer font-bold uppercase hover:text-accent1'>{item}
@@ -39,7 +42,7 @@ const NavbarComponent = () => {
 
           </div>
           <div>
-            <FilledButtonComponent title='Contact' link={'https://www.facebook.com/hhand.srvcs'} />
+            <FilledButtonComponent title='Contact' url={LINKS.facebook} />
           </div>
         </div>
       </div>
